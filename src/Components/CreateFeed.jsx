@@ -9,7 +9,9 @@ const CreateFeed = () => {
 
   const navigate = useNavigate();
 
-
+  const handlePhotoClick = () => {
+    navigate("/feed")
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -95,7 +97,7 @@ const CreateFeed = () => {
           </p>
 
           <div className="hero-buttons">
-            <button className="cta-btn">Start Writing</button>
+            <button className="cta-btn" onClick={handlePhotoClick} >Photos</button>
             <button className="cta-btn outline">Explore</button>
           </div>
         </div>
