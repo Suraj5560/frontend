@@ -18,7 +18,7 @@ const CreateFeed = () => {
 
     const formData = new FormData(e.target)
 
-    axios.post("http://localhost:3000/create-post" , formData)
+    axios.post("https://project-backend-1-u7ui.onrender.com/create-post", formData)
     .then((res) => {
       
       navigate("/feed")

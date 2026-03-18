@@ -12,7 +12,7 @@ const Feed = () => {
     const [likedPosts, setLikedPosts] = useState([])
 
     useEffect(() => {
-        axios.get("http://localhost:3000/posts")
+        axios.get("https://project-backend-1-u7ui.onrender.com/posts")
             .then((res) => {
                 // latest post first
                 const reversedPosts = res.data.posts.reverse()
